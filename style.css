@@ -1,0 +1,276 @@
+/* Global Reset & Box Model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+  background-color: #f0f0f0;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.header__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #4a5d73;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background-color: #eaf4fb;
+  padding: 80px 16px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.hero__text {
+  margin-bottom: 32px;
+  color: #5b6b7a;
+}
+
+/* Buttons */
+.button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.button--primary {
+  background-color: #1f6fd1;
+}
+
+.button--blue {
+  background-color: #1f6fd1;
+}
+
+.button--green {
+  background-color: #6aaa2e;
+}
+
+.button--orange {
+  background-color: #f39c12;
+}
+
+/* Features */
+.features {
+  background-color: #ffffff;
+  padding: 64px 16px;
+}
+
+.features__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.feature-card {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 32px 24px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.feature-card__icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.feature-card__title {
+  margin-bottom: 12px;
+}
+
+.feature-card__text {
+  margin-bottom: 24px;
+  color: #5b6b7a;
+}
+
+/* Pricing */
+.pricing {
+  background-color: #eaf4fb;
+  padding: 64px 16px;
+}
+
+.pricing__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.pricing-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.pricing-card__header {
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pricing-card__header--blue {
+  background-color: #1f6fd1;
+}
+
+.pricing-card__header--green {
+  background-color: #6aaa2e;
+}
+
+.pricing-card__header--orange {
+  background-color: #f39c12;
+}
+
+.pricing-card__body {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.pricing-card__price {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.pricing-card__price span {
+  font-size: 14px;
+}
+
+.pricing-card__list {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.pricing-card__list li {
+  margin-bottom: 8px;
+}
+
+.pricing-card__list li::before{
+  content: "✔";
+  color: #6aaa2e;
+  font-size: 14px;
+  font-weight: 1700;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 32px 16px; /* REDUCED height */
+}
+
+/* Horizontal layout */
+.footer__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* IMPORTANT */
+}
+
+/* Columns */
+.footer__column {
+  flex: 1;
+}
+
+/* Titles */
+.footer__title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+
+/* Lists */
+.footer__list {
+  list-style: none;
+}
+
+.footer__list li {
+  margin-bottom: 8px;
+}
+
+.footer__list a {
+  text-decoration: none;
+  color: #1f6fd1;
+}
+
+/* Check list */
+.footer__list--check li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.footer__list--check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #1f6fd1;
+  font-size: 13px;
+}
+
+/* Contact rows */
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.footer__contact--one span::before{
+  content:"✉️";
+  
+}
+
+.footer__contact--two span::before{
+  content:"📞";
+}
