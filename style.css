@@ -1,7 +1,4 @@
-/* Global Reset & Box Model */
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -266,11 +263,5 @@ body {
   color: #2c3e50;
 }
 
-.footer__contact--one span::before{
-  content:"✉️";
-  
-}
 
-.footer__contact--two span::before{
-  content:"📞";
-}
+
